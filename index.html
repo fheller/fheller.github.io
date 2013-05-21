@@ -1,0 +1,39 @@
+---
+layout: default
+title: frankheller
+---
+
+      <div class="row">
+        <div class="span12">
+
+          <div class="hero-unit" style="background-image: url(/images/dustin-desk-caffeine-hero.jpg);background-position:bottom;">
+
+            <h1 style="color:#fff; float:right;"><br>Frank Heller's blog</h1>
+            <p style="color:#fff;float:right;">blogs when I feel like writing them</p>
+            <br><br><br><br><br><br><br><br>
+
+          </div>
+        </div>
+      </div>
+
+<!--
+<div class="row">
+  <div class="span8 offset2">
+    <ul class="unstyled">
+      {% for post in site.posts limit:1000 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+-->
+
+<div class="row">
+  <div class="span12">
+    <dl class="dl-horizontal">
+      {% for post in site.posts limit:1000 %}
+      <dt style="font-weight: normal;">{{ post.date | date_to_string }}</dt><dd><a href="{{ post.url }}">{{ post.title }}</a></dd>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
