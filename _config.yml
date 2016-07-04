@@ -1,8 +1,7 @@
 destination: ./_site
-auto:        false
 lsi:         false
-server_port: 4000
-pygments:    true
+port: 4000
+highlighter:    rouge
 markdown:    kramdown
 permalink:   date
 
